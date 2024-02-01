@@ -1,0 +1,113 @@
+
+body, html {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button_1 {
+    border: 2px solid black;
+    background: transparent;
+    padding: 20px 40px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+
+.modal_1::backdrop {
+    background-color: black;
+    opacity: 0.8;
+}
+
+.modal_1 {
+    animation: fade-out 0.7s ease-out;
+  }
+  
+  .modal_1[open] {
+    animation: fade-in 0.7s ease-out;
+  }
+  
+  .modal_1[open]::backdrop {
+    animation: backdrop-fade-in 0.7s ease-out forwards;
+  }
+
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: scaleY(0);
+      display: none;
+    }
+  
+    100% {
+      opacity: 1;
+      transform: scaleY(1);
+      display: block;
+    }
+  }
+  
+  @keyframes fade-out {
+    0% {
+      opacity: 1;
+      transform: scaleY(1);
+      display: block;
+    }
+  
+    100% {
+      opacity: 0;
+      transform: scaleY(0);
+      display: none;
+    }
+  }
+  
+  @keyframes backdrop-fade-in {
+    0% {
+      background-color: rgb(0 0 0 / 0%);
+    }
+  
+    100% {
+      background-color: rgb(0 0 0 / 25%);
+    }
+  }
+  
+  body {
+    font-family: sans-serif;
+  }
+
+  .modal_1 {
+    border-radius: 30px;
+    padding: 50px;
+    border: 1px solid black ;
+  }
+
+  .modal_title_1 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .modal_paragraph_1 {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  .modal_button_1 {
+    font-size: 20px;
+    letter-spacing: 5px;
+    padding: 10px 20px;
+    background: transparent;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+
+
+
+
+
+
+
